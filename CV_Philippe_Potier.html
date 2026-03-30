@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Philippe Potier</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f8fafc;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 210mm;
+            margin: 0 auto;
+            background: white;
+            padding: 40px 50px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        /* En-tête */
+        .header {
+            margin-bottom: 25px;
+        }
+
+        .name {
+            font-size: 32px;
+            font-weight: bold;
+            color: #2563eb;
+            margin-bottom: 5px;
+        }
+
+        .title {
+            font-size: 16px;
+            font-weight: bold;
+            color: #0891b2;
+            margin-bottom: 15px;
+        }
+
+        .contact {
+            font-size: 13px;
+            color: #475569;
+            line-height: 1.8;
+        }
+
+        .contact a {
+            color: #2563eb;
+            text-decoration: none;
+        }
+
+        .contact a:hover {
+            text-decoration: underline;
+        }
+
+        /* Sections */
+        .section {
+            margin-top: 20px;
+        }
+
+        .section-title {
+            font-size: 15px;
+            font-weight: bold;
+            color: #2563eb;
+            margin-bottom: 12px;
+            padding-bottom: 5px;
+            border-bottom: 2px solid #e2e8f0;
+            display: flex;
+            align-items: center;
+        }
+
+        .section-title::before {
+            content: "▎";
+            color: #2563eb;
+            margin-right: 8px;
+            font-size: 20px;
+        }
+
+        /* Expérience */
+        .experience-item {
+            margin-bottom: 18px;
+        }
+
+        .job-title {
+            font-size: 14px;
+            font-weight: bold;
+            color: #1e293b;
+            margin-bottom: 3px;
+        }
+
+        .job-title .company {
+            color: #0891b2;
+        }
+
+        .period {
+            font-size: 12px;
+            color: #64748b;
+            font-style: italic;
+            margin-bottom: 6px;
+        }
+
+        .mission {
+            font-size: 13px;
+            color: #334155;
+            margin-left: 15px;
+            margin-bottom: 4px;
+        }
+
+        .mission::before {
+            content: "•";
+            color: #0891b2;
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+
+        /* Compétences */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: 140px 1fr;
+            gap: 8px;
+            font-size: 13px;
+        }
+
+        .skill-label {
+            font-weight: bold;
+            color: #7c3aed;
+        }
+
+        .skill-value {
+            color: #334155;
+        }
+
+        /* Formation */
+        .formation-item {
+            margin-bottom: 8px;
+        }
+
+        .formation-title {
+            font-size: 14px;
+            font-weight: bold;
+            color: #0891b2;
+            margin-bottom: 4px;
+        }
+
+        .formation-detail {
+            font-size: 13px;
+            color: #334155;
+            margin-left: 15px;
+            margin-bottom: 3px;
+        }
+
+        .formation-detail::before {
+            content: "•";
+            color: #0891b2;
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+
+        /* Langues */
+        .languages-grid {
+            display: grid;
+            grid-template-columns: 140px 1fr;
+            gap: 6px;
+            font-size: 13px;
+        }
+
+        .language-label {
+            color: #334155;
+        }
+
+        .language-label::before {
+            content: "●";
+            color: #0891b2;
+            margin-right: 8px;
+        }
+
+        .language-value {
+            color: #334155;
+        }
+
+        /* Impression */
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+
+            .container {
+                box-shadow: none;
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- En-tête -->
+        <div class="header">
+            <div class="name">Philippe Potier</div>
+            <div class="title">Développeur Full-Stack PHP</div>
+            <div class="contact">
+                📧 philippe.potier.dev@gmail.com | 📱 06 ** ** ** ** | 📍 Caen<br>
+                🔗 <a href="https://www.linkedin.com/in/philippe-potier/" target="_blank">linkedin.com/in/philippe-potier</a> | 
+                💻 <a href="https://github.com/PhilippePotier" target="_blank">github.com/PhilippePotier</a>
+            </div>
+        </div>
+
+        <!-- Expérience Professionnelle -->
+        <div class="section">
+            <div class="section-title">EXPÉRIENCE PROFESSIONNELLE</div>
+            
+            <div class="experience-item">
+                <div class="job-title"><span class="company">Développeur Full-Stack PHP / Go</span> — Sendinblue / Brevo</div>
+                <div class="period">2024 - Présent</div>
+                <div class="mission">Continuité des activités wallet (Google & Apple)</div>
+                <div class="mission">Amélioration solution Core et code coverage</div>
+                <div class="mission">Plugins marketplace</div>
+            </div>
+
+            <div class="experience-item">
+                <div class="job-title"><span class="company">Développeur Full-Stack PHP Laravel</span> — CaptainWallet</div>
+                <div class="period">2020 - 2024</div>
+                <div class="mission">Solutions loyalty wallet (Google & Apple) : McDonald's, KFC, Intermarché, Botanic</div>
+                <div class="mission">Boarding pass : Corsair, Air Caraïbes, French Bee</div>
+            </div>
+
+            <div class="experience-item">
+                <div class="job-title"><span class="company">Développeur Back-End PHP Laravel</span> — Agile</div>
+                <div class="period">2019 - 2020</div>
+                <div class="mission">Plateforme e-learning web et mobile (Dokki.app)</div>
+            </div>
+        </div>
+
+        <!-- Compétences Techniques -->
+        <div class="section">
+            <div class="section-title">COMPÉTENCES TECHNIQUES</div>
+            <div class="skills-grid">
+                <div class="skill-label">Langages</div>
+                <div class="skill-value">PHP 8, Go, JavaScript</div>
+                
+                <div class="skill-label">Frameworks</div>
+                <div class="skill-value">Laravel (expert), Symfony, CodeIgniter</div>
+                
+                <div class="skill-label">Front-End</div>
+                <div class="skill-value">Vue.js, Tailwind CSS</div>
+                
+                <div class="skill-label">Bases de données</div>
+                <div class="skill-value">MariaDB, MongoDB</div>
+                
+                <div class="skill-label">DevOps</div>
+                <div class="skill-value">Git, Docker, PHPUnit, Claude Code</div>
+            </div>
+        </div>
+
+        <!-- Formation -->
+        <div class="section">
+            <div class="section-title">FORMATION</div>
+            <div class="formation-item">
+                <div class="formation-title">Supinfo (2013-2018)</div>
+                <div class="formation-detail">Apprentissage agence web (2015-2016)</div>
+                <div class="formation-detail">Apprentissage Enedis (2016-2018)</div>
+            </div>
+        </div>
+
+        <!-- Langues -->
+        <div class="section">
+            <div class="section-title">LANGUES</div>
+            <div class="languages-grid">
+                <div class="language-label">Français</div>
+                <div class="language-value">Langue maternelle</div>
+                
+                <div class="language-label">Anglais</div>
+                <div class="language-value">Professionnel</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
